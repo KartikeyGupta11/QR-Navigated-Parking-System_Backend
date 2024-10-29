@@ -30,10 +30,10 @@ For OTP services, add your API keys in .env file in the backend directory.
 Run the app:
 
 
-# In the backend directory
+In the backend directory
 npm run dev
 
-# In the frontend directory
+In the frontend directory
 npm start
 
 Usage:

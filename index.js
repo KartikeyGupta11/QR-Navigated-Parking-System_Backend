@@ -4,9 +4,16 @@ import dbConnect from './config/database.js';
 import CurrentRouter from './routes/CurrentDataRoute.js';
 import cors from "cors";
 
+const corsOptions = {
+    origin : "https://smart-nb4h.onrender.com" , 
+
+    methods :  "POST , GET , PUT , DELETE" ,
+    credentials : true,
+
+};
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors(corsOptions));
 
 const PORT = process.env.PORT || 4000;
 

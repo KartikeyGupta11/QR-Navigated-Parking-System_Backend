@@ -5,8 +5,8 @@ import CurrentRouter from './routes/CurrentDataRoute.js';
 import cors from "cors";
 
 const corsOptions = {
-    origin : "https://smart-nb4h.onrender.com" , 
-
+    // origin : "https://smart-nb4h.onrender.com" , 
+    origin: "http://localhost:5173",
     methods :  "POST , GET , PUT , DELETE" ,
     credentials : true,
 

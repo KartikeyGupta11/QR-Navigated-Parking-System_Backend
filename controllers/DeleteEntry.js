@@ -4,10 +4,11 @@ import {Parking} from "../models/Parking.js";
 
 export const DeleteEntry = async(req, res) => {
     try {
-        const { CarNumber, Contact, SlotId} = req.body;
-        
+        const {CarNumber} = req.body;
         const existingUser = await CurrentData.findOne({CarNumber}).limit(1);
-        console.log(existingUser);
+        console.log("exist ",existingUser);
+        const Contact = existingUser.Contact;
+        const SlotId = existingUser.SlotId;
 
         if (existingUser) {
 
